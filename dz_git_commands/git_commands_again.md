@@ -22,6 +22,7 @@
 | *__```git config --global user.name```__* + "ваше имя" | указать имя пользователя |
 | *__```git config --global user.email```__* + e-mail | указать e-mail пользователя |
 | *__```git version```__* | узнать версию Git |
+<<<<<<< HEAD
 
 [Больше команд Git здесь ](https://git-scm.com/book/ru/v2/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-C%3A-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B) 
 
@@ -42,3 +43,15 @@ __________________________________________________________
 * [От Udemy](https://www.udemy.com/course/git-expert-4-hours/)
 
 # [Шпаргалка по консольным командам Git](https://github.com/nicothin/web-development/tree/master/git) 
+=======
+ *__```git checkout "ветка" ./```__*  | скопировать всю ветку  |
+| *__```git log 1 ветка 2 ветка```__* | показать журнал коммитов 1 ветки, которых нет во 2 |
+| *__```git diff 2ветка 1 ветка ./```__* | содержимое 1 1 ветки, которого нет во 2й |
+| *__```git log --follow```__*   | показать изменения файла с учётом его переименования |
+|  *__```git clean```__*   |  удаляет мусор мусора из рабочего каталога |
+| *__```git branch -m```__* | переименовать ветку: старое название ветки новое название ветки| 
+
+
+
+[Больше команд Git здесь ](https://git-scm.com/book/ru/v2/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-C%3A-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B) 
+>>>>>>> gitinstruction
