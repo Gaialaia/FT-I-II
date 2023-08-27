@@ -1,0 +1,5 @@
+/home/gaia/PYTHON/obj/Debug/net7.0/PYTHON.csproj.AssemblyReference.cache
+/home/gaia/PYTHON/obj/Debug/net7.0/PYTHON.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaia/PYTHON/obj/Debug/net7.0/PYTHON.AssemblyInfoInputs.cache
+/home/gaia/PYTHON/obj/Debug/net7.0/PYTHON.AssemblyInfo.cs
+/home/gaia/PYTHON/obj/Debug/net7.0/PYTHON.csproj.CoreCompileInputs.cache
