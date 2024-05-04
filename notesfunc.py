@@ -17,14 +17,14 @@ def addnote ():
     notes.append(title)
     content = input('enter content: ')
     notes.append(content)  
-    notes.append(date)
+    notes.append(date)  
     notesfile = open ('notes.txt', 'a')
     print(notes, file=notesfile)
     notesfile = open ('notes.txt', 'r')
     notesfile.readline()
-    notesfile.close()
+    notesfile.close()   #remove as there is "with"?
 
-# addnote()
+addnote()
 
 def show_allnotes():
     print(open('notes.txt').read())

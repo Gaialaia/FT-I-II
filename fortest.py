@@ -1,5 +1,5 @@
 
-s = "'title', 'content', '28.04.2024 13:49:15', '29'"
+# s = "'title', 'content', '28.04.2024 13:49:15', '29'"
 # s = ' '
 # print(s)
 # nl =  list(s.split(",")) 
@@ -11,12 +11,61 @@ s = "'title', 'content', '28.04.2024 13:49:15', '29'"
 #             linelist = list(line.split(","))
 #             print(linelist[0])
 
+# with open ('notes.csv') as file:
+#     for line in file:
+#         # line = list(line.split(","))
+#         print(line)
+
+file = open('notes.csv')  #every line as a list
+line = file.readline()
+line1 = file.readline()
+line = (list(line.split(",")))
+line1 = (list(line1.split(",")))   
+print(line[0])
+print(line1[0])
 
 
-notesfile = open ('notes.txt', 'r')
-for count, line in enumerate(notesfile):
-    if count == 2:
-        print(count,line)
+
+
+
+
+
+
+    
+# file2 = open('notes.txt')
+# print(file2.readline())
+       
+
+
+# notesfile = open ('notes.txt', 'r')  # prints based on id as id made with enumerate
+# for count, line in enumerate(notesfile):
+#     if count == 0:
+#         print(count,line)  # должно работать если данные вводить поэтапно
+    
+
+# count = 0  
+# notesfile = open ('notes.txt', 'r')  # to make every line as list so find right line on id
+# line = notesfile.read()
+# print(line)
+
+
+
+
+
+    
+   
+
+
+    
+
+
+
+# count = 0 # prints line count, that is different from id
+# for line in notesfile:
+#     count +=1
+#     if count == 6:
+#         print(count,line)
+
 
 
 # from datetime import datetime
