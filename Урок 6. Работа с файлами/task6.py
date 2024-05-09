@@ -43,8 +43,14 @@ ngf.close()
 
 ngf = open('nginxshort.txt','r')
 
+for line in ngf:
+    # line.replace('\n',' ').replace('\r', ' ')
+    nl = line.split(",")
+    # print(nl)
+    # print(type(nl))
 
-line = (line for line in ngf)
-print(list(line))
+
+G = (nl for nl in ngf)  
+
 
 
