@@ -50,26 +50,59 @@ ngf = open('nginxshort.txt','r')
 #     line = ngf.readline()
 # ngf.close()
 
-ln = 0
-dataline = []
 
-for line in open('nginxshort.txt','r'):
+
+
+# for line in open('nginxshort.txt','r'):
+#     line = ngf.readline()
+#     line = line.rstrip()
+#     y = line.replace("-", " ").replace(' " ', " ").split(" ") 
+  
+#     dataline.append(y[0])
+#     dataline.append(y[7])
+#     dataline.append(y[8])
+#     ln = ln + 1
+# print(dataline)
+    
+    
+    
+# ngf = open('nginxshort.txt','r')
+# line = ngf.readline()
+# line = line.rstrip()
+# y = line.replace("-", " ").replace(' " ', " ").split(" ") 
+# ln = ln + 1
+# dataline.append(y[0])
+# dataline.append(y[7])
+# dataline.append(y[8])
+# # ln = ln + 1
+
+# print(dataline,ln)
+
+ln = 0
+for line in open ('nginxshort.txt','r'):
     line = ngf.readline()
     line = line.rstrip()
-    y = line.replace("-", " ").replace(' " ', " ").split(" ")
-    ln = ln + 1
-   
+    y = line.replace("-", " ").replace(' " ', " ").split(" ") 
+    
+    dataline = []  
     dataline.append(y[0])
     dataline.append(y[7])
     dataline.append(y[8])
+    
+   
+    ln = ln + 1
+    while ln <= 5:
+        print(dataline)
+        break
 
-print(dataline)
+
+
+
     
+# G = (y for y in dataline )
+
     
-    
-    
-    
-    
+# next(G)
     
     
     
