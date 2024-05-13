@@ -40,7 +40,7 @@
 # ngf.close()
 
 
-ngf = open('nginxshort.txt','r')
+ngf = open('/home/gaia/nginx_logs','r')
 # ln = 1
 
 # line = ngf.readline()
@@ -79,21 +79,50 @@ ngf = open('nginxshort.txt','r')
 # print(dataline,ln)
 
 ln = 0
-for line in open ('nginxshort.txt','r'):
-    line = ngf.readline()
-    line = line.rstrip()
-    y = line.replace("-", " ").replace(' " ', " ").split(" ") 
+# for line in open ('/home/gaia/nginx_logs','r'):
+#     line = ngf.readline()
+#     line = line.rstrip()
+#     y = line.replace("-", " ").replace(' " ', " ").replace( '"GET', 'GET').split(" ") 
+  
     
-    dataline = []  
-    dataline.append(y[0])
-    dataline.append(y[7])
-    dataline.append(y[8])
+#     dataline = []  
+#     dataline.append(y[0])
+#     dataline.append(y[7])
+#     dataline.append(y[8])
     
    
-    ln = ln + 1
-    while ln <= 5:
-        print(dataline)
-        break
+#     ln = ln + 1
+#     while ln <= 7:
+#         print(dataline)
+#         break
+
+
+
+def getdata():
+    ln = 0
+    str_quantity = int(input('Enter line quantity: '))
+    for line in open  ('/home/gaia/nginx_logs','r'):
+        # str_quantity = int(input())
+        line = ngf.readline()
+        line = line.rstrip()
+        y = line.replace("-", " ").replace(' " ', " ").replace( '"GET', 'GET').split(" ")    
+        dataline = []  
+        dataline.append(y[0])
+        dataline.append(y[7])
+        dataline.append(y[8])
+        ln = ln + 1  
+        while ln <= str_quantity:
+            print(dataline)
+            break
+
+
+getdata()
+
+
+
+
+
+
 
 
 
