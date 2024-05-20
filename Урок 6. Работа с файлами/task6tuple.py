@@ -1,6 +1,10 @@
 
 
-# ngf = open('nginxshort.txt','r')
+ngf = open('nginxshort.txt','r')
+line = ngf.readline()
+f = line.partition('-')
+print(f)
+
 # L = [('adress', 'type', 'src')]
 
 
