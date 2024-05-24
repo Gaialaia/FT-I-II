@@ -44,7 +44,7 @@ bakery_sales = open ('bakery_sales.csv','a')
 
 # bakery_sales = open ('bakery_sales.csv','r')
 
-searched_sum = int(input("enter sum: "))
+# searched_sum = (input("enter sum: "))
 # l = 0
 # for line in open('bakery_sales.csv','r'):
 #     line = bakery_sales.readline()
@@ -56,25 +56,52 @@ searched_sum = int(input("enter sum: "))
 # with open ('bakery_sales.csv','r') as bs:
 #     for count,line in enumerate(bs):
             
-#             if count >= searched_sum:
+#             if count >= searched_sum-1:
 #                 print(line)
       
 
  
-with open ('bakery_sales.csv','r') as bs:
-    for count,line in enumerate(bs):
+# with open ('bakery_sales.csv','r') as bs:        
+#     for count,line in enumerate(bs):            
+#         if count <= searched_sum-1:
+#             print(count,line, end='')
+        
+        
+   # TO EDIT:    
+
+    
+
+# searched_line = (input('enter searched_sum: '))
+# with open('bakery_sales.csv') as file:
+#         for count,line in enumerate(file): 
+#             line = line.split()
+#             # print(count, line,'\n', end='')
+#             count = int(input("enter line number: "))
+#             print(count,line)
+#             break
             
-            if count <= searched_sum:
-                print(count,line)
-        
-        
-        
+           
+     
+with open('bakery_sales.csv','r') as file: 
+    sum_list = file.readlines()
+    print(sum_list)
+    searched_line = int(input("enter line number: "))
+    print(sum_list[searched_line])
+    new_sum = (input("enter new sum: "))
+    sum_list[searched_line] = new_sum
+with open('bakery_sales.csv', "r+") as file:  
+    # del sum_list[searched_line]
+    file.writelines(new_sum)
 
-        # print(line)
+# with open('bakery_sales.csv', "w") as file:
+#       for line in file:
+#         file.write(line)
 
-
-
-
+#         new_sum = float(input("enter new sum: "))
+#         sum_list[searched_line] = new_sum
+#         print(new_sum,file=bakery_sales)
+   
+                
 
 
 
