@@ -36,7 +36,6 @@
 bakery_sales = open ('bakery_sales.csv','a')
 
 # sum_sales = float(input("enter sum: "))
-
 # print(sum_sales, file=bakery_sales)
 
 # with open ('bakery_sales.csv','r') as bs:
@@ -67,35 +66,52 @@ bakery_sales = open ('bakery_sales.csv','a')
 #             print(count,line, end='')
         
         
-   # TO EDIT:    
-
-    
-
-# searched_line = (input('enter searched_sum: '))
-# with open('bakery_sales.csv') as file:
-#         for count,line in enumerate(file): 
-#             line = line.split()
-#             # print(count, line,'\n', end='')
-#             count = int(input("enter line number: "))
-#             print(count,line)
-#             break
-            
-           
-     
+   # TO EDIT:            
+    #with list works now
 with open('bakery_sales.csv','r') as file: 
+   
     sum_list = file.readlines()
     print(sum_list)
-    searched_line = int(input("enter line number: "))
-    print(sum_list[searched_line])
-    new_sum = (input("enter new sum: "))
-    sum_list[searched_line] = new_sum
-with open('bakery_sales.csv', "r+") as file:  
-    # del sum_list[searched_line]
-    file.writelines(new_sum)
 
-# with open('bakery_sales.csv', "w") as file:
-#       for line in file:
-#         file.write(line)
+    searched_line = int(input('enter line number:\n'))
+    print(sum_list[searched_line])
+    new_sum = str(input("enter new sum: \n")) + '\n' 
+    sum_list[searched_line] = new_sum
+    
+    
+
+    
+    # searched_line = int(input("enter line number: "))
+    # print(sum_list[searched_line])
+  
+
+
+with open('bakery_sales.csv', 'w', encoding='utf-8') as file: 
+    file.writelines(sum_list) 
+    
+#     # del sum_list[searched_line]
+#     # file.writelines(sum_list)
+#     new_sum = (input("enter new sum: "))
+#     sum_list[searched_line] = new_sum
+# with open('bakery_sales.csv', "r+") as file:  
+#     # del sum_list[searched_line]
+#     file.writelines(new_sum)
+
+
+
+
+    
+      
+
+       
+
+
+
+
+
+
+
+
 
 #         new_sum = float(input("enter new sum: "))
 #         sum_list[searched_line] = new_sum
